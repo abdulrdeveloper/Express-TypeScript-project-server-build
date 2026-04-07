@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
     "test": "test-watch --onSuccess \"node dist/index.js\""
   },
   "keywords": [],
