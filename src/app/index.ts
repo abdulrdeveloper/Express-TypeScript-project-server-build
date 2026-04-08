@@ -1,9 +1,14 @@
 import express from 'express';
 import type { Application } from 'express';
-
+import todoRouter from './todo/routes.js';
 export function createServerApplication(): Application {
     const app = express();
 
+    app.use('/todos', todoRouter);
+
+    //#region  //*=========== routes ===========
+    
+    /*
     app.get('/', (req, res) => {
         return res.json({ message: 'Hello World! I built a server using TypeScript and Express!' });
     });
@@ -11,6 +16,9 @@ export function createServerApplication(): Application {
     app.get('/hello', (req, res) => {
         return res.json({ message: 'Byee, My test server is working fine!' });
     });
+    */
+
+   //#endregion  //*======== routes ===========
 
     return app;
 }
