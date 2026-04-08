@@ -21,10 +21,11 @@ to yay error aiy ga jab tak ham package.json file mein "type": "module" nahi kar
 
 import http from 'node:http'
 import { env } from './env.js';
+import { createServerApplication } from './app/index.js';
 
 async function main() {
     try {
-        const server = http.createServer()
+        const server = http.createServer(createServerApplication());
         const PORT: number = env.PORT ? +env.PORT : 8080  // is line ka matlab he ke agar proces.env.PORT ke andar port he to to usko typecast (number me convert) kar do, aur agar process.env.PORT ke andar port nahi he to default port 8080 use karo
         server.listen(PORT, () => {
             console.log(`Server is running on port ${PORT}`);
