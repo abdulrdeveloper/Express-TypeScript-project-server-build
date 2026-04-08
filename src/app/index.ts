@@ -5,11 +5,11 @@ export function createServerApplication(): Application {
     const app = express();
 
     app.get('/', (req, res) => {
-      return res.json({ message: 'Hello World! I built a server using TypeScript and Express!'});
+        return res.json({ message: 'Hello World! I built a server using TypeScript and Express!' });
     });
-// to ham curl http://localhost:8080/ command run karne par yah response milega {"message":"'Hello World! I built a server using TypeScript and Express!"} , aur curl http://localhost:8080/hello command run karne par yah response milega {"message":"Byee"}
+    // to ham curl http://localhost:8080/ command run karne par yah response milega {"message":"'Hello World! I built a server using TypeScript and Express!"} , aur curl http://localhost:8080/hello command run karne par yah response milega {"message":"Byee"}
     app.get('/hello', (req, res) => {
-      return res.json({message: 'Byee, My test server is working fine!'});
+        return res.json({ message: 'Byee, My test server is working fine!' });
     });
 
     return app;
