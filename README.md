@@ -14,6 +14,6 @@ This project demonstrates how to build a server using **TypeScript** and **Expre
 - **Scalability**: The `createServerApplication` function allows easy updates without modifying the core server logic.
 
 ## Usage
-- Run the server: `npm run dev`
+- Run the server: `npm run dev` in the terminal
 - Example routes:
   - `GET /todos`: Handles todo-related requests.
