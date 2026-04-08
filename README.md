@@ -26,4 +26,4 @@ This project demonstrates how to build a server using **TypeScript** and **Expre
 3. Access the API:
    - `GET /todos`: Handles todo-related requests.
 
-This project is a great starting point for building scalable and maintainable TypeScript-based APIs.
+This project is a great starting point for learning real world and building scalable and maintainable TypeScript-based APIs.
