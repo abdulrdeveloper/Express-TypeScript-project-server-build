@@ -2,7 +2,7 @@ import type { title } from 'node:process';
 import {z} from 'zod';
 import { de } from 'zod/locales';
 
-const todoSchema = z.object({
+export const todoValidationSchema = z.object({
     id: z.string().describe('ID of the Todo'),
     title: z.string().describe('title of the Todo'),
     description: z.string().optional().describe('Description of the Todo'),
@@ -11,7 +11,7 @@ const todoSchema = z.object({
 
 //#region  //*=========== both are same===========
 
-export type ITodo = z.infer<typeof todoSchema>;
+export type Todo = z.infer<typeof todoValidationSchema>;
 
 // export interface ITodo{
     //     id: string;
