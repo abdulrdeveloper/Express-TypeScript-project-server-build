@@ -9,7 +9,7 @@ export function createServerApplication(): Application {
     });
 // to ham curl http://localhost:8080/ command run karne par yah response milega {"message":"'Hello World! I built a server using TypeScript and Express!"} , aur curl http://localhost:8080/hello command run karne par yah response milega {"message":"Byee"}
     app.get('/hello', (req, res) => {
-      return res.json({message: 'Byee'});
+      return res.json({message: 'Byee, My test server is working fine!'});
     });
 
     return app;
