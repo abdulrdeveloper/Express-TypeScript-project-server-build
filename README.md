@@ -1,4 +1,5 @@
 
+
 # Express-TypeScript Server
 
 This project demonstrates how to build a server using **TypeScript** and **Express**. It is designed with modularity and scalability in mind, making it easy to maintain and extend.
